@@ -24,6 +24,15 @@ from powercontext.sources.connectors import (
     ConnectorRunStatus,
     ConnectorSubmissionStatus,
 )
+from powercontext.sources.csv_rows import (
+    CSV_ROW_SOURCE_DEFINITION,
+    CSVDocumentInput,
+    CSVRowInput,
+    CSVRowSource,
+    CSVRowSourceDefinition,
+    csv_row_source_id,
+    parse_csv_document,
+)
 from powercontext.sources.definitions import (
     AdapterSourceDefinition,
     SourceDefinition,
@@ -53,6 +62,11 @@ __all__ = [
     "ConnectorRunSession",
     "ConnectorRunStatus",
     "ConnectorSubmissionStatus",
+    "CSV_ROW_SOURCE_DEFINITION",
+    "CSVDocumentInput",
+    "CSVRowInput",
+    "CSVRowSource",
+    "CSVRowSourceDefinition",
     "Source",
     "SourceAdapter",
     "SourceCatalog",
@@ -70,5 +84,7 @@ __all__ = [
     "SourceStore",
     "TextEvidence",
     "manifest_for_definition",
+    "csv_row_source_id",
+    "parse_csv_document",
     "project_source_for_transport",
 ]
